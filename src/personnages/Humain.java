@@ -21,7 +21,7 @@ public class Humain {
 	}
 
 	protected String parler(String texte) {
-		return nom + " : " + texte;
+		return "(" + nom + ") - " + texte;
 	}
 
 	public void direBonjour() {
