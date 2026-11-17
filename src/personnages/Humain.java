@@ -3,7 +3,7 @@ package personnages;
 public class Humain {
 	private String nom;
 	private String boisson;
-	private int argent;
+	protected int argent;
 
 	public Humain(String nom, String boisson, int argent) {
 		super();
@@ -20,8 +20,8 @@ public class Humain {
 		return argent;
 	}
 
-	private String parler(String texte) {
-		return texte;
+	protected String parler(String texte) {
+		return nom + " : " + texte;
 	}
 
 	public void direBonjour() {
